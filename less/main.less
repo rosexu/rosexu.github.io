@@ -1,0 +1,58 @@
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.navbar.my-navbar {
+    /*background: transparent;*/
+    border: none;
+}
+
+.info {
+    margin: auto;
+    width: 100px;
+    text-align: center;
+
+    .name {
+        font-family: Helvetica;
+    }
+
+    .job {
+        font-weight: bold;
+    }
+
+    .typed-cursor{
+        opacity: 1;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+}
+
+body {
+    background-color: black !important;
+    span {
+        color: white;
+    }
+}
+
+/*medium viewport*/
+@media screen and (min-width: 768px) {
+
+}
+
+/*large viewport*/
+@media screen and (min-width: 1200px) {
+
+}
