@@ -1,28 +1,16 @@
 @import "navbar.less";
-
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
+@import "miscel.less";
 
 .info {
     margin: auto;
-    width: 100px;
+    width: 200px;
     text-align: center;
+    font-family: typeWriter, serif;
+    position: relative;
+    top: 30%;
 
     .name {
-        font-family: Helvetica;
+        font-size: 30px;
     }
 
     .job {
@@ -40,6 +28,8 @@ html {
     body {      
         background-color: black !important;
         color: white;
+        font-size: 15px;
+        font-family: Helvetica;
     }
 }
 
