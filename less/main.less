@@ -15,8 +15,31 @@
 }
 
 .navbar.my-navbar {
-    /*background: transparent;*/
+    background: transparent;
     border: none;
+
+    button.navbar-toggle:focus, 
+    button.navbar-toggle:hover {
+        background: transparent;
+    }
+
+    .navbar-collapse {
+        border: none;
+    }
+
+    .nav {
+        li {
+            a {
+                color: white;
+                text-transform: uppercase;
+            }
+
+            a:hover {
+                opacity: 0.8;
+                color: white;
+            }
+        }
+    }
 }
 
 .info {
@@ -39,10 +62,9 @@
         animation: blink 0.7s infinite;
     }
 }
-
-body {
-    background-color: black !important;
-    span {
+html {
+    body {      
+        background-color: black !important;
         color: white;
     }
 }
