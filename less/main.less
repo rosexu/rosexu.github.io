@@ -1,32 +1,7 @@
 @import "navbar.less";
 @import "miscel.less";
+@import "name.less";
 
-.info {
-    margin: auto;
-    width: 300px;
-    text-align: center;
-    font-family: typeWriter, serif;
-    position: relative;
-    top: 23%;
-
-    .name {
-        font-size: 60px;
-    }
-
-    .job {
-        font-size: 35px;
-        font-weight: bold;
-    }
-
-    .typed-cursor{
-        font-size: 45px;
-        font-family: Helvetica;
-        opacity: 1;
-        -webkit-animation: blink 0.7s infinite;
-        -moz-animation: blink 0.7s infinite;
-        animation: blink 0.7s infinite;
-    }
-}
 html {
     body {      
         background-color: black !important;
@@ -36,8 +11,29 @@ html {
     }
 }
 
-.project {
+.page-header {
+    text-align: center;
+}
+
+div.project {
     background: gray;
+    height: 200px;
+    padding: 0;
+
+    .picture-view {
+        height: 100%;
+        width: 100%;
+
+        .picture {
+            height: 100%;
+        }
+    }
+
+    .text-view {
+        height: 100%;
+        width: 100%;
+        padding: 0 10px;
+    }
 }
 
 /*medium viewport*/
