@@ -1,5 +1,5 @@
 div.project {
-    background: gray;
+    /*background: gray;*/
     height: 200px;
     padding: 0;
 
@@ -14,7 +14,32 @@ div.project {
 
     .text-view {
         height: 100%;
-        width: 100%;
+        width: 314px;
         padding: 0 10px;
+    }
+
+    .hid-xs {
+        display: none;
+    }
+}
+
+/*medium viewport*/
+@media screen and (min-width: 768px) {
+    div.project {
+        .picture-view {
+            width: auto;
+            display: inline;
+        }
+
+        .text-view {
+            width: auto;
+            height: auto;
+            display: inline;
+            font-size: 16.5px;
+        }
+
+        .hid-xs{
+            display: block;
+        }
     }
 }
