@@ -10,11 +10,12 @@ var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 var material = new THREE.MeshLambertMaterial( { color: "#990000", 
 												shading: THREE.SmoothShading } );
 var cube = new THREE.Mesh( geometry, material );
+cube.position.y = -1.5;
 scene.add( cube );
 
 camera.position.z = 5;
 
-light.position.set( 3, 3, 3 );
+light.position.set( 3, 2, 3 );
 scene.add( light );
 
 var render = function () {
@@ -27,3 +28,13 @@ var render = function () {
 };
 
 render();
+
+window.addEventListener( 'resize', onWindowResize, false );
+function onWindowResize(){
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+}
