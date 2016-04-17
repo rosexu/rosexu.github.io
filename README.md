@@ -6,4 +6,5 @@ Fully-responsive personal website built with Bootstrap using HTML, LESS, and Jav
 
 Supports Chrome, Firefox, Safari, and proudly does not support IE9 and under. 
 
-Thank you [typed.js](https://github.com/mattboldt/typed.js/) for the typing animation. 
+#### Plugins
+[typed.js](https://github.com/mattboldt/typed.js/)
